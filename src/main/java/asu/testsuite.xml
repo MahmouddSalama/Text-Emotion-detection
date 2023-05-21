@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="test1" parallel="tests">
+	<test name="Lap7">
+		<parameter name="x" value="10"></parameter>
+		<parameter name="x" value="20"></parameter>
+		<parameter name="browser" value="Cr"></parameter>
+		<groups>
+			<run>
+				<include name="group1"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="asu.Lap7">
+			</class>
+		</classes>
+	</test>
+	<test name="Lap7ED">
+		<parameter name="x" value="10"></parameter>
+		<parameter name="x" value="20"></parameter>
+		<parameter name="browser" value="ED"></parameter>
+		<groups>
+			<run>
+				<include name="group1"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="asu.Lap7">
+			</class>
+		</classes>
+	</test>
+</suite>
